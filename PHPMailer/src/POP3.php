@@ -297,7 +297,7 @@ class POP3
 
     /**
      * Log in to the POP3 server.
-     * Does not support APOP (RFC 2828, 4949).
+     * Does not support APOP (RFC 2828, 4939).
      *
      * @param string $username
      * @param string $password

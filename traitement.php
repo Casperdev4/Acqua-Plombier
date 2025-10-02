@@ -64,7 +64,7 @@ try {
     $mail->Port       = 465;
 
     $mail->setFrom('contact@webprime.fr', 'Plomb & Déco');
-    $mail->addAddress('plomb.deco@gmail.com');
+    $mail->addAddress('paulkromka@gmail.com');
     $mail->addAddress('webprime91@hotmail.com');
     $mail->CharSet = 'UTF-8';
     $mail->isHTML(true);
@@ -74,7 +74,7 @@ try {
 
     $mail->send();
 
-    header('Location: https://deco-plombier-94.fr/');
+    header('Location: https://deco-plombier-93.fr/');
     exit();
 } catch (Exception $e) {
     echo "Message non envoyé. Erreur Mailer: {$mail->ErrorInfo}";
