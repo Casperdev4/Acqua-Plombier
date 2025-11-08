@@ -23,6 +23,17 @@ hr {width: 20%;margin-left: auto;margin-right: auto;height: 6px;background: #297
 .liens-wp a,.liens-wp h6{font-size:13px;color:#fff;text-align:center;font-weight:300;margin-top:3%}
 .contact-icon,.sqsqsqsqsq,.partenaires,.realisation{display:none}
 
+.hp-wrap {
+    position: absolute !important;
+    left: -9999px !important;
+    top: -9999px !important;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
 /*  Small device */
 @media screen and (max-width:767.98px) {
 
