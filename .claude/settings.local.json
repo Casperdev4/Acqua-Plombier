@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Get-ChildItem -Filter *.html | ForEach-Object { (Get-Content $_FullName -Raw) -replace ''https://kazeko-fight\\.com\\./'', ''https://kazeko-fight.com/'' | Set-Content $_FullName -NoNewline }\")",
+      "Bash(powershell -Command:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
