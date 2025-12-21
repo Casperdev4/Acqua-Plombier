@@ -3,7 +3,14 @@
     "allow": [
       "Bash(powershell -Command \"Get-ChildItem -Filter *.html | ForEach-Object { (Get-Content $_FullName -Raw) -replace ''https://kazeko-fight\\.com\\./'', ''https://kazeko-fight.com/'' | Set-Content $_FullName -NoNewline }\")",
       "Bash(powershell -Command:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nCorrection des erreurs sur tout le site\n\n- Correction du domaine dans mentions-legales.html\n- Correction du département VAL-DE-MARNE → SEINE-SAINT-DENIS\n- Correction du lien kazeko-fight.com./ → kazeko-fight.com/\n- Correction JSON-LD: téléphone et adresse (Sevran 93270)\n- Correction du numéro affiché sur le bouton mobile\n- Correction validation formulaire: commentaires non obligatoires\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(powershell:*)",
+      "Bash(del update-forms.ps1)",
+      "Bash(del fix-encoding.ps1)"
     ]
   }
 }

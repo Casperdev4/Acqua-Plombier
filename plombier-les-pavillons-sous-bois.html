@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -120,20 +120,13 @@
             <div class="imageimage">
                 <img src="plombier-93.webp" alt="devis plombier Les Pavillons-sous-Bois">
             </div>
-            <form action="https://formsubmit.co/formulaire@webprime.fr" method="POST" onsubmit="return validateForm()">
+            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="website" autocomplete="off">
+                    <input type="text" id="website" name="_gotcha" autocomplete="off">
                 </div>
-                <!-- Anti-spam (obligatoire pour éviter les robots) -->
                 <input type="hidden" name="_captcha" value="true">
-                <input type="hidden" name="_next" value="https://aqua-plombier-93.fr/">
-                <input type="hidden" name="_cc" value="paulkromka@gmail.com">
-                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
-                <input type="hidden" name="_from" value="Acqua Plombier">
-                <input type="hidden" name="_subject" value="Formulaire">
-                <input type="hidden" name="_template" value="table">
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
                 <label for="tel">Téléphone :</label>
@@ -546,6 +539,41 @@
             }
             return true;
         }
+    </script>
+<script>
+    async function submitToWebPrime(e) {
+        e.preventDefault();
+        const form = document.getElementById('contactForm');
+        const btn = form.querySelector('button[type="submit"]');
+        const originalText = btn.textContent;
+
+        // Anti-spam honeypot check
+        if (form._gotcha && form._gotcha.value) return false;
+
+        btn.textContent = 'Envoi en cours...';
+        btn.disabled = true;
+
+        try {
+            const formData = new FormData(form);
+            const response = await fetch('https://webprime.app/webhook/contact/ea675340e10a4ebf2c7a13bd9a65a881c70e698eef76584d04a0d6c937243501', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                window.location.href = 'https://aqua-plombier-93.fr/';
+            } else {
+                alert('Erreur lors de l\'envoi. Veuillez réessayer.');
+                btn.textContent = originalText;
+                btn.disabled = false;
+            }
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez réessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
+        }
+        return false;
+    }
     </script>
 </body>
 
