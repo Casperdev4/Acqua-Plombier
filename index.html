@@ -464,6 +464,48 @@
                     l’écoute, le conseil et la transparence.</p>
             </div>
         </section>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>QUESTIONS FRÉQUENTES</h2>
+            <div class="faq-item">
+                <button class="faq-question">Quels services de plomberie proposez-vous ?</button>
+                <div class="faq-answer">
+                    <p>Nous proposons une gamme complète de services : débouchage de canalisations, réparation de fuites d'eau, recherche de fuite, installation de WC, douches et parois, installation d'éviers et lavabos, ainsi qu'un service d'urgence disponible 24h/24 et 7j/7 dans toute la Seine-Saint-Denis (93).</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Intervenez-vous en urgence ?</button>
+                <div class="faq-answer">
+                    <p>Oui, notre équipe de plombiers intervient en urgence 24h/24 et 7j/7, y compris les week-ends et jours fériés. Que ce soit pour une fuite d'eau, une canalisation bouchée ou une panne sanitaire, nous nous déplaçons rapidement dans tout le département 93.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Quelles villes couvrez-vous en Seine-Saint-Denis ?</button>
+                <div class="faq-answer">
+                    <p>Nous intervenons dans toutes les villes de la Seine-Saint-Denis : Sevran, Aulnay-sous-Bois, Bobigny, Montreuil, Saint-Denis, Pantin, Drancy, Bondy, Noisy-le-Grand, Aubervilliers, Le Blanc-Mesnil, Villepinte, Livry-Gargan, Rosny-sous-Bois, Gagny, et bien d'autres communes du 93.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Le devis est-il gratuit ?</button>
+                <div class="faq-answer">
+                    <p>Oui, nous proposons des devis gratuits et sans engagement. Contactez-nous par téléphone au 06 23 16 13 42 ou via notre formulaire en ligne pour obtenir une estimation personnalisée de votre projet de plomberie.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Proposez-vous des contrats d'entretien ?</button>
+                <div class="faq-answer">
+                    <p>Oui, nous proposons des contrats ponctuels ou annuels pour l'entretien de vos installations de plomberie. Ces contrats couvrent l'entretien de chauffe-eau, la vérification des canalisations, le dépannage rapide et le contrôle des installations sanitaires.</p>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const faqItem = button.parentElement;
+                    faqItem.classList.toggle('active');
+                });
+            });
+        </script>
     </main>
     <footer>
         <div id="contact">

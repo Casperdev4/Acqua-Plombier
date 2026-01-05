@@ -189,6 +189,48 @@
                 durables, adaptés à vos besoins.
             </p>
         </div>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>QUESTIONS SUR NOTRE ENTREPRISE</h2>
+            <div class="faq-item">
+                <button class="faq-question">Qui est Acqua Plombier Express ?</button>
+                <div class="faq-answer">
+                    <p>Acqua Plombier Express est une entreprise de plomberie professionnelle basée à Sevran, spécialisée dans les interventions de plomberie en Seine-Saint-Denis (93). Notre équipe qualifiée intervient pour tous vos besoins : débouchage, réparation, installation et dépannage d'urgence.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Vos plombiers sont-ils qualifiés ?</button>
+                <div class="faq-answer">
+                    <p>Oui, tous nos techniciens sont diplômés et expérimentés. Ils suivent régulièrement des formations pour rester à jour sur les nouvelles techniques et normes en vigueur. Chaque intervention est réalisée dans les règles de l'art.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Quels sont vos engagements envers les clients ?</button>
+                <div class="faq-answer">
+                    <p>Nous nous engageons sur la qualité, la ponctualité et la transparence. Chaque intervention est réalisée avec soin, dans le respect des délais annoncés et avec des tarifs clairs communiqués à l'avance. Votre satisfaction est notre priorité.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Travaillez-vous avec les particuliers et les professionnels ?</button>
+                <div class="faq-answer">
+                    <p>Oui, nous intervenons aussi bien chez les particuliers que pour les professionnels : syndics de copropriété, commerces, bureaux, restaurants, etc. Nous adaptons nos services à vos besoins spécifiques.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Comment contacter Acqua Plombier Express ?</button>
+                <div class="faq-answer">
+                    <p>Vous pouvez nous joindre par téléphone au 06 23 16 13 42 (disponible 24h/24), par email à paulkromka@gmail.com, ou via notre formulaire de contact en ligne. Nous répondons rapidement à toutes les demandes.</p>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const faqItem = button.parentElement;
+                    faqItem.classList.toggle('active');
+                });
+            });
+        </script>
     </main>
     <footer>
         <div id="contact">

@@ -60,3 +60,80 @@ hr {width: 20%;margin-left: auto;margin-right: auto;height: 6px;background: #297
   .reseau-contact{text-align:center;margin-bottom:13%}.reseau-contact a{font-size:13px;color:#fff}
   .partenaires-pc,.realisation-pc,.bouboubou,.bouboubou2{display:none}
 }
+
+/* FAQ Section */
+.faq-section {
+    max-width: 900px;
+    margin: 10% auto 5%;
+    padding: 0 5%;
+}
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+.faq-item {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.faq-question {
+    width: 100%;
+    padding: 20px;
+    background-color: #01002c;
+    color: #fff;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s;
+}
+.faq-question:hover {
+    background-color: #297fb8;
+}
+.faq-question::after {
+    content: '+';
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+.faq-item.active .faq-question::after {
+    content: '-';
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s;
+    background-color: #fff;
+}
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding: 20px;
+}
+.faq-answer p {
+    margin: 0;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+@media screen and (max-width:767.98px) {
+    .faq-section {
+        margin: 15% auto 10%;
+        padding: 0 3%;
+    }
+    .faq-question {
+        font-size: 16px;
+        padding: 15px;
+    }
+    .faq-answer p {
+        font-size: 15px;
+    }
+}

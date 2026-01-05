@@ -157,6 +157,48 @@
                 </p>
             </div>
         </section>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>QUESTIONS SUR NOS DEVIS</h2>
+            <div class="faq-item">
+                <button class="faq-question">Comment obtenir un devis gratuit ?</button>
+                <div class="faq-answer">
+                    <p>C'est très simple ! Remplissez notre formulaire en ligne ci-dessus ou appelez-nous directement au 06 23 16 13 42. Nous vous répondons rapidement avec une estimation personnalisée et détaillée pour votre projet de plomberie.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Quels éléments sont inclus dans le devis ?</button>
+                <div class="faq-answer">
+                    <p>Nos devis sont clairs et transparents. Ils incluent le coût de la main-d'œuvre, les matériaux nécessaires, le déplacement, ainsi que la TVA. Aucun frais caché n'est ajouté après l'intervention.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Combien coûte une intervention de plomberie ?</button>
+                <div class="faq-answer">
+                    <p>Le tarif varie selon le type d'intervention (débouchage, réparation, installation) et la complexité du chantier. Nous garantissons des prix compétitifs et justes. Contactez-nous pour obtenir un devis adapté à votre situation.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Le devis est-il sans engagement ?</button>
+                <div class="faq-answer">
+                    <p>Oui, tous nos devis sont gratuits et sans engagement. Vous êtes libre d'accepter ou de refuser notre proposition. Nous croyons en la transparence et ne vous mettrons jamais sous pression.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Sous quel délai recevrai-je mon devis ?</button>
+                <div class="faq-answer">
+                    <p>Pour les demandes simples, nous répondons généralement sous 24 heures. Pour les projets plus complexes nécessitant une visite sur place, nous vous contactons rapidement pour fixer un rendez-vous.</p>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const faqItem = button.parentElement;
+                    faqItem.classList.toggle('active');
+                });
+            });
+        </script>
     </main>
     <footer>
         <div id="contact">

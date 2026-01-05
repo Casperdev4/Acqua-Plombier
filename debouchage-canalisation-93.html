@@ -171,6 +171,48 @@
                 <button type="submit">ENVOYER</button>
             </form>
         </div>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>QUESTIONS SUR LE DÉBOUCHAGE</h2>
+            <div class="faq-item">
+                <button class="faq-question">Quels types de canalisations débouchez-vous ?</button>
+                <div class="faq-answer">
+                    <p>Nous débouchons tous types de canalisations : WC, éviers, lavabos, douches, baignoires, colonnes d'immeubles et canalisations extérieures. Quelle que soit la nature du bouchon, nous avons la solution adaptée.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Quelles techniques utilisez-vous pour le débouchage ?</button>
+                <div class="faq-answer">
+                    <p>Selon la situation, nous utilisons différentes techniques professionnelles : débouchage manuel au furet, nettoyage haute pression, inspection par caméra pour localiser le bouchon. Nous choisissons la méthode la plus efficace et la moins invasive.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Intervenez-vous en urgence pour un débouchage ?</button>
+                <div class="faq-answer">
+                    <p>Oui, nous proposons un service d'urgence 24h/24 et 7j/7 pour les débouchages urgents. Une canalisation bouchée peut vite devenir problématique, c'est pourquoi nous intervenons rapidement dans toute la Seine-Saint-Denis.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Combien coûte un débouchage de canalisation ?</button>
+                <div class="faq-answer">
+                    <p>Le tarif dépend du type d'équipement concerné et de la gravité du bouchon. Nous proposons des prix compétitifs avec un devis gratuit avant intervention. Appelez-nous au 06 23 16 13 42 pour une estimation.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Comment éviter les bouchons de canalisations ?</button>
+                <div class="faq-answer">
+                    <p>Pour prévenir les bouchons : évitez de jeter des graisses dans l'évier, utilisez des grilles de protection, ne jetez pas de lingettes dans les WC, et faites un entretien régulier de vos canalisations. Un curage préventif peut aussi être envisagé.</p>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const faqItem = button.parentElement;
+                    faqItem.classList.toggle('active');
+                });
+            });
+        </script>
     </main>
     <footer>
         <div id="contact">
