@@ -10,7 +10,8 @@
       "Bash(git stash:*)",
       "Bash(powershell:*)",
       "Bash(del update-forms.ps1)",
-      "Bash(del fix-encoding.ps1)"
+      "Bash(del fix-encoding.ps1)",
+      "Bash(git commit:*)"
     ]
   }
 }

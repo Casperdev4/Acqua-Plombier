@@ -145,14 +145,17 @@
         <img src="plombier-93.webp" alt="devis plombier 93 Seine-Saint-Denis">
     </div>
 
-    <form id="contactForm" onsubmit="return submitToWebPrime(event)">
+    <form id="contactForm" action="https://formsubmit.co/paulkromka@gmail.com" method="POST" onsubmit="return sendBoth(event)">
         <!-- Honeypot anti-spam -->
         <div class="hp-wrap">
             <label for="website">Votre site web :</label>
-            <input type="text" id="website" name="_gotcha" autocomplete="off">
+            <input type="text" id="website" name="_honey" autocomplete="off">
         </div>
 
-        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="Formulaire">
+                <input type="hidden" name="_next" value="https://aqua-plombier-93.fr/">
 
         <!-- Sans redirection : ne pas mettre _next -->
          
