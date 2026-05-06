@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://aqua-plombier-33.fr</loc>
@@ -74,8 +74,8 @@
             <image:title>Équipe Plombier 33</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://aqua-plombier-33.fr/plombier-93-idf.webp</image:loc>
-            <image:caption>Visuel de nos interventions sur l'Île-de-France et le 93.</image:caption>
+            <image:loc>https://aqua-plombier-33.fr/plombier-33-idf.webp</image:loc>
+            <image:caption>Visuel de nos interventions sur l'Île-de-France et le 33.</image:caption>
             <image:title>Plombier 33 Île-de-France</image:title>
         </image:image>
     </url>
@@ -175,7 +175,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://aqua-plombier-33.fr/plombier-93-gironde.html</loc>
+        <loc>https://aqua-plombier-33.fr/plombier-33-gironde.html</loc>
         <lastmod>2026-04-12</lastmod>
         <image:image>
             <image:loc>https://aqua-plombier-33.fr/plombier-33.webp</image:loc>
@@ -1206,7 +1206,7 @@
         <image:image>
             <image:loc>https://aqua-plombier-33.fr/depannage-urgence.webp</image:loc>
             <image:caption>Dépannage plomberie en urgence en Gironde, intervention immédiate.</image:caption>
-            <image:title>Dépannage plomberie urgence 93</image:title>
+            <image:title>Dépannage plomberie urgence 33</image:title>
         </image:image>
     </url>
     <url>
